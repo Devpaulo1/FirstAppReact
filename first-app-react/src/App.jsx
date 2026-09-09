@@ -30,16 +30,16 @@ const content = [
 
 function App() {
   return (
-   <div>
-    <header>
-      <img src={ReactLogo} alt="REact logo" />
-      <div>
-        <h1>React.js</h1>
-        <p>i.e., using the React library for rendering the UI</p>
-      </div>
-    </header>
+    <div>
+      <header>
+        <img src={ReactLogo} alt="React logo" />
+        <div>
+          <h1>React.js</h1>
+          <p>i.e., using the React library for rendering the UI</p>
+        </div>
+      </header>
 
-   <div id="tabs">
+      <div id="tabs">
         <menu>
           <button>Why React?</button>
           <button>Core Features</button>
@@ -48,10 +48,9 @@ function App() {
 
         <div id="tab-content">
           <ul>
-            <li>React is extremely popular</li>
-            <li>It makes building complex, interactive UIs a breeze</li>
-            <li>It's powerful & flexible</li>
-            <li>It has a very active and versatile ecosystem</li>
+            {content[3].map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
         </div>
       </div>
