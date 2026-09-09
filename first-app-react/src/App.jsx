@@ -1,4 +1,6 @@
-import ReactLogo from "./assets/react-logo.png"
+import ReactLogo from './assets/react-logo.png'
+
+import './styles.css'
 
 const content = [
 
