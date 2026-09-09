@@ -72,7 +72,7 @@ function App() {
             className={activeContentIndex === 3 ? "active" : ""}
             onClick={() => setActiveContentIndex(3)}
           >
-            Vanilla vs. Vanilla
+            React vs Vanilla
           </button>
         </menu>
 
